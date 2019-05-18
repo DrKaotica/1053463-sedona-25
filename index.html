@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
+                <img src="img/logo.svg" width="140" height="72" alt="Логотип">
+            </a>
+            <ul class="site-navigation">
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="visually-hidden">Туристический городок "Седона"</h1>
+        <section class="intro">
+            <img class="welcome" />
+            <svg>
+                <polygon />
+            </svg>
+        </section>
+        <section class="content">
+            <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </section>
+        <section class="search-form">
+            <p><span>Заинтересовались?</span>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+                гостиниц в седоне</p>
+            <button type="button" title="Поиск гостиницы в Седоне"></button>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-tag">
+            <b>#visitSEDONA</b>
+        </p>
+        <div class="footer-social">
+            <ul>
+                <li><a class="social-button" href="#">Твиттер</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Ютуб</a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright">
+            <b>Website by:</b>
+            <a href="https://htmlacademy.ru">
+                <img src="img/htmlacademylogo.svg" width="115" height="41" alt="Логотип htmlacademy">
+            </a>
+        </p>
+    </footer>
+    <section class="modal modal-search">
+    </section>
+</body>
 
-  </body>
 </html>
