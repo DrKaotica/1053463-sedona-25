@@ -16,7 +16,7 @@
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
                 <li><a href="#">Карта штата</a></li>
-                <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+                <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
@@ -29,35 +29,48 @@
             <h2 class="visually-hidden">Сортировка</h2>
         </section>
         <section class="content">
-            <ul>
-                <li>
-                    <img src="amara-resort.jpg" alt="Amara Resort & Spa" />
-                    <h3>Amara Resort & Spa</h3>
+            <ul class="hotel-list">
+                <li class="hotel-info">
+                    <img class="hotel-list-item" src="amara-resort.jpg" alt="Amara Resort & Spa" />
+                    <h3 class="hotel-list-item-label">Amara Resort & Spa</h3>
                     <span class="catalog-item-type">Гостиница</span>
                     <span class="catalog-item-price">От 4000 р.</span>
                     <a class="" href="catalog-item.html">Подробнее</a>
                     <a class="button" href="book.it">Забронировать</a>
-                    <div class="five-star"></div>
+                    <ul class="rating-stars" aria-label="5 stars">
+                        <li><svg> </svg></li>
+                        <li><svg> </svg></li>
+                        <li><svg> </svg></li>
+                        <li><svg> </svg></li>
+                        <li><svg> </svg></li>
+                    </ul>
                     <div class="rating">Рейтинг 8.5</div>
                 </li>
-                <li>
-                    <img src="amara-resort.jpg" alt="Desert Quail Inn" />
-                    <h3>Desert Quail Inn</h3>
+                <li class="hotel-info">
+                    <img class="hotel-list-item" src="amara-resort.jpg" alt="Desert Quail Inn" />
+                    <h3 class="hotel-list-item-label">Desert Quail Inn</h3>
                     <span class="catalog-item-type">Мотель</span>
                     <span class="catalog-item-price">От 3000 р.</span>
                     <a class="" href="catalog-item.html">Подробнее</a>
                     <a class="button" href="book.it">Забронировать</a>
-                    <div class="three-star"></div>
+                    <ul class="rating-stars" aria-label="3 stars">
+                        <li><svg> </svg></li>
+                        <li><svg> </svg></li>
+                        <li><svg> </svg></li>
+                    </ul>
                     <div class="rating">Рейтинг 8.9</div>
                 </li>
-                <li>
-                    <img src="amara-resort.jpg" alt="Amara Resort & Spa" />
-                    <h3>Villas at poco diablo</h3>
+                <li class="hotel-info">
+                    <img class="hotel-list-item" src="amara-resort.jpg" alt="Amara Resort & Spa" />
+                    <h3 class="hotel-list-item-label">Villas at poco diablo</h3>
                     <span class="catalog-item-type">Апартаменты</span>
                     <span class="catalog-item-price">От 2000 р.</span>
                     <a class="" href="catalog-item.html">Подробнее</a>
                     <a class="button" href="book.it">Забронировать</a>
-                    <div class="two-star"></div>
+                    <ul class="rating-stars" aria-label="2 stars">
+                        <li><svg> </svg></li>
+                        <li><svg> </svg></li>
+                    </ul>
                     <div class="rating">Рейтинг 8.5</div>
                 </li>
             </ul>
@@ -75,7 +88,7 @@
             </ul>
         </div>
         <p class="footer-copyright">
-            <b>Website by:</b>
+            <span class="bold">Website by:</span>
             <a href="https://htmlacademy.ru">
                 <img src="img/htmlacademylogo.svg" width="115" height="41" alt="Логотип htmlacademy">
             </a>
