@@ -23,7 +23,7 @@
     <main class="container">
         <h1 class="visually-hidden">Туристический городок "Седона"</h1>
         <section class="intro">
-            <img src="img/intro.jpg" alt="Sedona intro" width="1200" height="800"/>
+            <img src="img/intro.jpg" alt="Sedona intro" width="1200" height="800" />
         </section>
         <section class="content">
             <strong>Седона — небольшой городок в Аризоне, заслуживающий большего!</strong>
@@ -54,6 +54,30 @@
         </p>
     </footer>
     <section class="modal modal-search">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <form class="search-hotel-form" method="GET" action="https://echo.htmlacademy.ru">
+            <fieldset>
+                <div class="search-hotel-form-control-block">
+                    <label for="arrival-date-control">Дата заезда</label>
+                    <input id="arrival-date-control" name="arrival-date" type="date">
+                </div>
+                <div class="search-hotel-form-control-block">
+                    <label for="departure-date-control">Дата выезда</label>
+                    <input id="departure-date-control" name="departure-date" type="date">
+                </div>
+                <div class="search-hotel-form-control-block">
+                    <label for="number-of-adults-control">Взрослые</label>
+                    <input id="number-of-adults-control" name="number-of-adults" type="number">
+                </div>
+                <div class="search-hotel-form-control-block">
+                    <label for="number-of-children-control">Дети</label>
+                    <input id="number-of-children-control" name="number-of-children" type="number">
+                </div>
+            </fieldset>
+            <button type="submit" class="filter-button button">
+                Найти
+            </button>
+        </form>
     </section>
 </body>
 
