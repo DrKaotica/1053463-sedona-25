@@ -31,31 +31,35 @@
         </section>
         <section class="search-hotel">
             <p class="search-hotel-description"><span class="interested">Заинтересовались?</span>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <button type="button" title="Поиск гостиницы в Седоне" class="button search-hotel-btn">Поиск гостиницы в Седоне</button>
+            <button type="button" title="Поиск гостиницы в Седоне" class="button search-hotel-btn" aria-label="Открыть модальное окно поиска гостиницы">Поиск гостиницы в Седоне</button>
             <div class="modal modal-search">
                 <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
                 <form class="search-hotel-form" method="POST" action="https://echo.htmlacademy.ru">
                     <fieldset>
                         <div class="search-hotel-form-control-block">
                             <label for="arrival-date-control">Дата заезда</label>
-                            <input id="arrival-date-control" name="arrival-date">
+                            <input id="arrival-date-control" type="text" name="arrival-date">
                             <img src="img/calendar.svg" alt="Иконка календаря">
                         </div>
                         <div class="search-hotel-form-control-block">
                             <label for="departure-date-control">Дата выезда</label>
-                            <input id="departure-date-control" name="departure-date">
+                            <input id="departure-date-control" type="text" name="departure-date">
                             <img src="img/calendar.svg" alt="Иконка календаря">
                         </div>
                         <div class="search-hotel-form-control-block">
                             <label for="number-of-adults-control">Взрослые</label>
-                            <input id="number-of-adults-control" name="number-of-adults" type="number">
+                            <button type="button" aria-label="Убрать одного взрослого" class="minus-btn">-</button>
+                            <input id="number-of-adults-control" name="number-of-adults" type="text">
+                            <button type="button" aria-label="Добавить одного взрослого" class="plus-btn">+</button>
                         </div>
                         <div class="search-hotel-form-control-block">
                             <label for="number-of-children-control">Дети</label>
-                            <input id="number-of-children-control" name="number-of-children" type="number">
+                            <button type="button" aria-label="Убрать одного ребенка" class="minus-btn">-</button>
+                            <input id="number-of-children-control" name="number-of-children" type="text">
+                            <button type="button" aria-label="Добавить одного ребенка" class="plus-btn">+</button>
                         </div>
                     </fieldset>
-                    <button type="submit" class="filter-button button" title="Найти гостиницы">
+                    <button type="submit" class="filter-button button" title="Найти гостиницы" aria-label="Найти гостиницы">
                         Найти
                     </button>
                 </form>
