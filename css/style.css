@@ -96,8 +96,17 @@ body {
     text-transform: uppercase
 }
 
-.control {
+.control,
+.rating {
     background-color: #f2f2f2
+}
+
+.rating,
+.catalog-item-type,
+.catalog-item-price {
+    font-family: "PTSans", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 .search-hotel-form input {
@@ -123,7 +132,8 @@ body {
     display: none
 }
 
-.footer-social ul {
+.footer-social ul,
+.rating-stars {
     list-style: none
 }
 
