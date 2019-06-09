@@ -151,14 +151,14 @@ body {
 
 .footer-copyright svg {
     width: 115px;
-    height: 41;
+    height: 41px;
 }
 
-.footer-copyright .htmlacademy-logo:hover path {
+.htmlacademy-logo:hover path {
     fill: #81b3d2;
 }
 
-.footer-copyright .htmlacademy-logo:active path {
+.htmlacademy-logo:active path {
     fill: #bdbbbc;
 }
 
