@@ -1,66 +1,73 @@
 @font-face {
     font-family: "PTSans";
-    src: url(../fonts/ptsans.woff), url(../fonts/ptsans.woff2)
+    src: url(../fonts/ptsans.woff), url(../fonts/ptsans.woff2);
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "PTSans Bold";
-    src: url(../fonts/ptsansbold.woff), url(../fonts/ptsansbold.woff2)
+    font-family: "PTSans";
+    src: url(../fonts/ptsansbold.woff), url(../fonts/ptsansbold.woff2);
+    font-weight: bold;
+    font-style: normal;
 }
 
-.button,
-body {
+.button {
     line-height: 26px;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 body {
-    font-family: "PTSans", sans-serif;
+    font-family: "PTSans", Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #000
+    color: #000;
+    line-height: 26px;
+    text-transform: uppercase;
 }
 
 .site-navigation {
-    font-family: "PTSans Bold", sans-serif;
+    font-family: "PTSans", sans-serif;
     font-size: 14px;
-    line-height: 26px
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .site-navigation a {
     color: #000;
-    text-decoration: none
+    text-decoration: none;
 }
 
-.site-navigation .site-navigation-current a {
-    color: #766357
+.site-navigation-current a {
+    color: #766357;
 }
 
 .button {
     font-size: 21px;
     border: 0;
-    color: #fff
+    color: #fff;
 }
 
 .search-hotel-description {
     font-size: 14px;
-    line-height: 24px
+    line-height: 24px;
 }
 
 .search-hotel-description .interested {
-    font-family: "PTSans Bold", sans-serif;
+    font-family: "PTSans", sans-serif;
     font-size: 30px;
-    line-height: 36px
+    line-height: 36px;
+    font-weight: bold;
 }
 
 .book-hotel-link,
 .open-search-hotel-form-btn {
-    background-color: #766357
+    background-color: #766357;
 }
 
 .book-hotel-link:hover,
 .open-search-hotel-form-btn:hover {
-    background-color: #604e43
+    background-color: #604e43;
 }
 
 .book-hotel-link:active,
@@ -71,34 +78,35 @@ body {
 
 .details-link,
 .search-hotels-btn {
-    background-color: #81b3d2
+    background-color: #81b3d2;
 }
 
 .details-link:hover,
 .search-hotels-btn:hover,
 .social-button:hover {
-    background-color: #669ec0
+    background-color: #669ec0;
 }
 
 .details-link:active,
 .search-hotels-btn:active,
 .social-button:active {
     background: rgb(84, 150, 189, 1);
-    color: rgb(255, 255, 255, .3)
+    color: rgb(255, 255, 255, .3);
 }
 
 .search-hotel-form,
 .search-hotel-form input {
-    font-family: "PTSans Bold", sans-serif;
+    font-family: "PTSans", sans-serif;
     font-size: 14px;
     line-height: 26px;
     border: 0;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .control,
 .rating {
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
 }
 
 .rating,
@@ -110,83 +118,84 @@ body {
 }
 
 .search-hotel-form input {
-    background-color: inherit
+    background-color: inherit;
 }
 
 .control:hover {
-    background-color: #ebebeb
+    background-color: #ebebeb;
 }
 
 .control input:focus {
-    background-color: #fff
+    background-color: #fff;
 }
 
 .minus-btn,
 .plus-btn {
     border: 0;
     background-color: #f2f2f2;
-    color: #cacaca
+    color: #cacaca;
 }
 
 .visually-hidden {
-    display: none
+    display: none;
 }
 
 .footer-social ul,
 .rating-stars {
-    list-style: none
+    list-style: none;
 }
 
 .social-button {
-    background-color: #81b3d2
+    background-color: #81b3d2;
 }
 
 .footer-copyright svg {
     width: 115px;
-    height: 41
+    height: 41;
 }
 
 .footer-copyright .htmlacademy-logo:hover path {
-    fill: #81b3d2
+    fill: #81b3d2;
 }
 
 .footer-copyright .htmlacademy-logo:active path {
-    fill: #bdbbbc
+    fill: #bdbbbc;
 }
 
 .calendar-icon:hover path {
-    fill: #000
+    fill: #000;
 }
 
 .calendar-icon:active path {
-    fill: #81b3d2
+    fill: #81b3d2;
 }
 
 .minus-btn:hover,
 .plus-btn:hover {
-    color: #000
+    color: #000;
 }
 
 .hotel-list-item-label:hover,
 .minus-btn:active,
 .plus-btn:active {
-    color: #81b3d2
+    color: #81b3d2;
 }
 
 .hotel-list-item-label {
-    font-family: "PTSans Bold", sans-serif;
+    font-family: "PTSans", sans-serif;
     font-size: 21px;
     line-height: 26px;
-    color: #000
+    color: #000;
+    font-weight: bold;
 }
 
 .hotel-list-item-label:active {
-    color: #bdbbbc
+    color: #bdbbbc;
 }
 
 .hotel-list a {
     text-decoration: none;
     color: #fff;
     font-size: 14px;
-    line-height: 21px
+    line-height: 21px;
 }
