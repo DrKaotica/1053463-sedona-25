@@ -11,15 +11,15 @@
     <header class="main-header">
         <nav class="main-navigation">
             <ul class="site-navigation">
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
+                <li><a class="navigation-list-link" href="#">Информация</a></li>
+                <li><a class="navigation-list-link" href="#">Фото и видео</a></li>
                 <li>
                     <a class="main-header-logo" href="index.html">
                         <img src="img/logo.svg" width="140" height="72" alt="Логотип">
                     </a>
                 </li>
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
+                <li><a class="navigation-list-link" href="#">Карта штата</a></li>
+                <li><a class="navigation-list-link active" href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
@@ -34,6 +34,17 @@
                         <li class="filter-list-item">
                             <div class="filter-list-item-container">
                                 <input class="filter-list-item-checkbox" type="checkbox" id="infrastructure-pool" checked />
+                                <svg class="checkbox-icon checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                                        <path fill="#FFFFFF"
+                                            d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                                    </svg>
+                                <svg class="checkbox-icon checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                                        <path fill="#FFFFFF"
+                                            d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                                        <path fill="#FFFFFF"
+                                            d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                                    </svg>
+
                                 <label class="filter-list-item-label" for="infrastructure-pool">
                                         <span>Бассейн</span>
                                     </label>
@@ -42,6 +53,16 @@
                         <li class="filter-list-item">
                             <div class="filter-list-item-container">
                                 <input class="filter-list-item-checkbox" type="checkbox" id="infrastructure-parking" />
+                                <svg class="checkbox-icon checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                                        <path fill="#FFFFFF"
+                                            d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                                    </svg>
+                                <svg class="checkbox-icon checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                                        <path fill="#FFFFFF"
+                                            d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                                        <path fill="#FFFFFF"
+                                            d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                                    </svg>
                                 <label class="filter-list-item-label" for="infrastructure-parking">
                                         <span>Парковка</span>
                                     </label>
@@ -50,6 +71,16 @@
                         <li class="filter-list-item">
                             <div class="filter-list-item-container">
                                 <input class="filter-list-item-checkbox" type="checkbox" id="infrastructure-wifi" />
+                                <svg class="checkbox-icon checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                                        <path fill="#FFFFFF"
+                                            d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                                    </svg>
+                                <svg class="checkbox-icon checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                                        <path fill="#FFFFFF"
+                                            d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                                        <path fill="#FFFFFF"
+                                            d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                                    </svg>
                                 <label class="filter-list-item-label" for="infrastructure-wifi">
                                         <span>wi-fi</span>
                                     </label>
@@ -63,6 +94,16 @@
                         <li class="filter-list-item">
                             <div class="filter-list-item-container">
                                 <input class="filter-list-item-checkbox" type="checkbox" id="type-hotel" checked />
+                                <svg class="checkbox-icon checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                                        <path fill="#FFFFFF"
+                                            d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                                    </svg>
+                                <svg class="checkbox-icon checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                                        <path fill="#FFFFFF"
+                                            d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                                        <path fill="#FFFFFF"
+                                            d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                                    </svg>
                                 <label class="filter-list-item-label" for="type-hotel">
                                         <span>Гостиница</span>
                                     </label>
@@ -71,6 +112,16 @@
                         <li class="filter-list-item">
                             <div class="filter-list-item-container">
                                 <input class="filter-list-item-checkbox" type="checkbox" id="type-model" checked />
+                                <svg class="checkbox-icon checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                                        <path fill="#FFFFFF"
+                                            d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                                    </svg>
+                                <svg class="checkbox-icon checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                                        <path fill="#FFFFFF"
+                                            d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                                        <path fill="#FFFFFF"
+                                            d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                                    </svg>
                                 <label class="filter-list-item-label" for="type-model">
                                         <span>Мотель</span>
                                     </label>
@@ -79,6 +130,16 @@
                         <li class="filter-list-item">
                             <div class="filter-list-item-container">
                                 <input class="filter-list-item-checkbox" type="checkbox" id="type-apartments" checked />
+                                <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                                        <path fill="#FFFFFF"
+                                            d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                                    </svg>
+                                <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                                        <path fill="#FFFFFF"
+                                            d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                                        <path fill="#FFFFFF"
+                                            d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                                    </svg>
                                 <label class="filter-list-item-label" for="type-apartments">
                                         <span>Апартаменты</span>
                                     </label>
@@ -98,12 +159,12 @@
                     </div>
                     <div class="price-slier">
                         <div class="slider-bar"></div>
-                        <svg class="slider-handle" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                        <svg class="slider-handle" xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 23">
                                 <path opacity=".3" fill="#ABABAB"
                                     d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
                                 <circle fill="#FFF" cx="10" cy="10" r="10" />
                                 <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg>
-                        <svg class="slider-handle" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                        <svg class="slider-handle" xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 23">
                                 <path opacity=".3" fill="#ABABAB"
                                     d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
                                 <circle fill="#FFF" cx="10" cy="10" r="10" />
@@ -138,10 +199,10 @@
                     </div>
                 </div>
                 <div class="sort-container-block sort-btns-container ">
-                    <svg xmlns="http://www.w3.org/2000/svg " width="11 " height="10 " viewBox="0 0 11 10 " class="arrow-up ">
-                            <path fill="#231F20 " d="M5.5 0L0 10h11z " /></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg " width="11 " height="10 " viewBox="0 0 11 10 " class="sort-direction-active arrow-down ">
-                            <path fill="#231F20 " d="M5.5 10L0 0h11 " /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg " width="11 " height="10 " viewBox="0 0 11 10 " class="sort-direction arrow-up">
+                            <path d="M5.5 0L0 10h11z " /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg " width="11 " height="10 " viewBox="0 0 11 10 " class="sort-direction arrow-down active">
+                            <path d="M5.5 10L0 0h11 " /></svg>
                 </div>
             </div>
         </section>
@@ -158,7 +219,7 @@
                                 <div class="catalog-item-info-container ">
                                     <div class="catalog-item-info-block ">
                                         <span class="catalog-item-type ">Гостиница</span>
-                                        <a class="details-link " href="catalog-item.html "><span
+                                        <a class="details-link" href="catalog-item.html "><span
                                                     class="details-link-label ">Подробнее</span></a>
                                     </div>
                                     <div class="catalog-item-info-block ">
@@ -184,18 +245,18 @@
                     <div class="hotel-info-content-wrapper ">
                         <div class="hotel-info-block ">
                             <img class="hotel-list-item-image " src="img/desert-quail.jpg " alt="Desert Quail Inn " />
-                            <div class="hotel-description-container ">
-                                <a class="hotel-site-link " href="# ">
+                            <div class="hotel-description-container">
+                                <a class="hotel-site-link " href="#">
                                     <h3 class="hotel-list-item-label ">Desert Quail Inn</h3>
                                 </a>
-                                <div class="catalog-item-info-container ">
-                                    <div class="catalog-item-info-block ">
+                                <div class="catalog-item-info-container">
+                                    <div class="catalog-item-info-block">
                                         <span class="catalog-item-type ">Мотель</span>
-                                        <a class="details-link " href="catalog-item.html "><span>Подробнее</span></a>
+                                        <a class="details-link" href="catalog-item.html "><span>Подробнее</span></a>
                                     </div>
                                     <div class="catalog-item-info-block ">
                                         <span class="catalog-item-price ">От 3000 р.</span>
-                                        <a class="book-hotel-link " href="book.it "><span>Забронировать</span></a>
+                                        <a class="book-hotel-link" href="book.it "><span>Забронировать</span></a>
                                     </div>
                                 </div>
                             </div>

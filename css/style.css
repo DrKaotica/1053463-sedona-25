@@ -145,7 +145,7 @@ body {
 .book-hotel-link:active,
 .open-search-hotel-form-btn:active {
     background: rgb(80, 62, 51, 1);
-    color: rgb(255, 255, 255, .3)
+    color: rgb(255, 255, 255, 0.3)
 }
 
 .details-link,
@@ -163,7 +163,7 @@ body {
 .search-hotels-btn:active,
 .social-button:active {
     background: rgb(84, 150, 189, 1);
-    color: rgb(255, 255, 255, .3);
+    color: rgb(255, 255, 255, 0.3);
 }
 
 .social-button:active .social-btn-icon {
@@ -197,12 +197,27 @@ body {
     background-color: inherit;
 }
 
-.control:hover {
+.departure-date-control-container:hover,
+.arrival-date-control-container:hover {
     background-color: #ebebeb;
 }
 
-.control input:focus {
-    background-color: #fff;
+.control input {
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.search-hotel-form-control {
+    width: 100%;
+    height: 100%;
+}
+
+.control .search-hotel-form-control:focus {
+    background-color: #ffffff;
+    outline: none;
+    border-color: #e5e5e5;
 }
 
 .minus-btn,
@@ -497,6 +512,7 @@ body {
     height: 40px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .search-hotel-controls-container {
@@ -504,9 +520,10 @@ body {
 }
 
 .control-icon-container {
-    margin-right: 10px;
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 10px;
 }
 
 .search-hotel-form-control {
@@ -515,6 +532,10 @@ body {
 
 .count-control {
     width: 38px;
+}
+
+.count-control:focus {
+    outline: none;
 }
 
 .number-of-adults-control-container,
@@ -683,7 +704,19 @@ body {
     color: #81b3d2;
 }
 
-.sort-direction-active path {
+.sort-direction path {
+    fill: #cacaca;
+}
+
+.sort-direction:hover path {
+    fill: #000000;
+}
+
+.sort-direction:active path {
+    fill: #81b3d2;
+}
+
+.sort-direction.active path {
     fill: #81b3d2;
 }
 
@@ -827,19 +860,39 @@ body {
     align-items: center;
 }
 
-.filter-list-item-label::before {
-    content: url(../img/checkbox-off.svg);
-    margin-right: 15px;
-    height: 23px;
-    width: 23px;
-}
-
 .filter-list-item-checkbox {
     display: none;
 }
 
-.filter-list-item-checkbox:checked+.filter-list-item-label::before {
-    content: url(../img/checkbox-on.svg);
+.checkbox-off,
+.checkbox-on {
+    position: absolute;
+}
+
+.filter-list-item-label {
+    padding-left: 40px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.filter-list-item-checkbox:disabled~.checkbox-icon path {
+    fill: #6a6a6a;
+}
+
+.filter-list-item-checkbox:checked~.checkbox-off {
+    visibility: hidden;
+}
+
+.filter-list-item-checkbox:checked~.checkbox-on {
+    visibility: visible;
+}
+
+.filter-list-item-checkbox~.checkbox-off {
+    visibility: visible;
+}
+
+.filter-list-item-checkbox~.checkbox-on {
+    visibility: hidden;
 }
 
 .filter-list-item:not(:last-child) {
@@ -898,6 +951,11 @@ body {
     position: absolute;
 }
 
+.slider-handle:hover {
+    height: 24px;
+    width: 22px;
+}
+
 .slider-handle:last-child {
     left: 80%;
 }
@@ -920,4 +978,22 @@ body {
     color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 2px;
+}
+
+.filter-form-submit-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navigation-list-link.active {
+    color: #766357;
+}
+
+.navigation-list-link:hover:not(.active) {
+    color: #81b3d2;
+}
+
+.navigation-list-link:active:not(.active) {
+    color: #000000;
+    opacity: 0.3;
 }
