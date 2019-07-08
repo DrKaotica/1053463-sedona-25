@@ -681,7 +681,7 @@ body {
     align-items: center;
 }
 
-.arrow-up {
+.sort-ascending {
     margin-right: 15px;
 }
 
@@ -750,6 +750,10 @@ body {
 
 .sort-option.active .sort-option-link {
     color: #81b3d2;
+}
+
+.sort-direction {
+    display: flex;
 }
 
 .sort-direction path {
